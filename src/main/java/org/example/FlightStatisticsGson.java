@@ -14,13 +14,12 @@ import java.util.IllegalFormatPrecisionException;
 
 public class FlightStatisticsGson {
     public static void main(String[] args) {
-//        if (args.length != 1) {
-//            System.out.println("Не передан ни один файл");
-//            return;
-//        }
+        if (args.length != 1) {
+            System.out.println("Не передан ни один файл");
+            return;
+        }
 
-//        String pathToJsonFile = args[0];
-        String pathToJsonFile = "tickets.json";
+        String pathToJsonFile = args[0];
 
         try {
             Gson gson = new Gson();
