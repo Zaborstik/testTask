@@ -14,12 +14,13 @@ import java.util.IllegalFormatPrecisionException;
 
 public class FlightStatisticsGson {
     public static void main(String[] args) {
-        if (args.length != 1) {
-            System.out.println("Не передан ни один файл");
-            return;
-        }
+//        if (args.length != 1) {
+//            System.out.println("Не передан ни один файл");
+//            return;
+//        }
 
-        String pathToJsonFile = args[0];
+//        String pathToJsonFile = args[0];
+        String pathToJsonFile = "tickets.json";
 
         try {
             Gson gson = new Gson();
@@ -52,7 +53,7 @@ public class FlightStatisticsGson {
             }
 
             int avgFlightTime = totalFlightTime / flightTimes.length;
-            System.out.printf("Среднее время полета между городами Владивосток и Тель-Авив: %.2d мин.\n", avgFlightTime);
+            System.out.printf("Среднее время полета между городами Владивосток и Тель-Авив: %d мин.\n", avgFlightTime);
 
             Arrays.sort(flightTimes);
             int percentileIndex = (int) Math.ceil(0.9 * flightTimes.length);
