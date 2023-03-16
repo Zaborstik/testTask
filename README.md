@@ -14,15 +14,19 @@
 
 Программа ожидает, что данные о билетах будут иметь следующий формат:
 <pre><code>{
-  "tickets": [
-    {
-      "origin": "VVO",
-      "destination": "TLV",
-      "departure_date": "10.06.19",
-      "departure_time": "7:50",
-      "arrival_date": "11.06.19",
-      "arrival_time": "9:45"
-    },
+  "tickets": [{
+    "origin": "VVO",
+    "origin_name": "Владивосток",
+    "destination": "TLV",
+    "destination_name": "Тель-Авив",
+    "departure_date": "12.05.18",
+    "departure_time": "16:20",
+    "arrival_date": "12.05.18",
+    "arrival_time": "22:10",
+    "carrier": "TK",
+    "stops": 3,
+    "price": 12400
+  },
     ...
   ]
 }</code></pre>
